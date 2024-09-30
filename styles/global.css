@@ -61,3 +61,38 @@ a {
   line-height: 16px;
   font-weight: var(--font-medium);
 }
+
+.alert {
+  background-color: var(--color-danger);
+  color: var(--always-white);
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.alert.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.alert .close-alert {
+  background: transparent;
+  border: none;
+  color: var(--always-white);
+  cursor: pointer;
+}
+
+.alert .close-alert i {
+  font-size: 18px;
+}

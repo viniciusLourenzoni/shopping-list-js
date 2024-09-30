@@ -30,15 +30,17 @@
           <h1>Compras da semana</h1>
         </div>
         <div class="input">
-          <input type="text" placeholder="Adicione um novo item" />
-          <button type="submit">Adicionar item</button>
+          <input
+            type="text"
+            id="inputText"
+            placeholder="Adicione um novo item"
+          />
+          <button type="submit" id="btnAdd">Adicionar item</button>
         </div>
         <div>
           <ul class="list">
             <li class="item">
-              <label>
-                <input type="checkbox" name="item" /> Pão de forma
-              </label>
+              <label> <input type="checkbox" name="item" /> Macarrão </label>
               <button><i class="fas fa-trash"></i></button>
             </li>
             <li class="item">
@@ -48,17 +50,19 @@
               <button><i class="fas fa-trash"></i></button>
             </li>
             <li class="item">
-              <label>
-                <input type="checkbox" name="item" /> Pão de forma
-              </label>
+              <label> <input type="checkbox" name="item" /> Queijo </label>
               <button><i class="fas fa-trash"></i></button>
             </li>
             <li class="item">
-              <label>
-                <input type="checkbox" name="item" /> Pão de forma
-              </label>
+              <label> <input type="checkbox" name="item" /> Suco </label>
               <button><i class="fas fa-trash"></i></button>
             </li>
+            <div class="alert hidden" id="alertBox">
+              <span id="alertMessage"></span>
+              <button class="close-alert" id="closeAlert">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
           </ul>
         </div>
       </main>

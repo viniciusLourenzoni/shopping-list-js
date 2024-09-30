@@ -65,3 +65,22 @@
   color: var(--always-white);
   font-weight: var(--font-semibold);
 }
+
+@media (max-width: 768px) {
+  .input {
+    display: grid;
+  }
+
+  main {
+    margin: 5rem;
+  }
+
+  .input input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .input button {
+    width: 100%;
+  }
+}

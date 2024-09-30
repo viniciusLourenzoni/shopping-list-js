@@ -6,6 +6,10 @@
   background-color: var(--background-secondary);
   margin: 0.75rem 0;
   border-radius: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .item {
@@ -17,7 +21,7 @@
 }
 
 label input {
-  background-color: var(--);
+  background-color: var(--background-secondary);
 }
 
 .list input {
